@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Hello') {
             steps {
-                echo "Build name is $(currentBuild.displayName)"
+                echo "Build name is ${currentBuild.displayName}"
             }
         }
     }
